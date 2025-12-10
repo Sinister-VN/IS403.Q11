@@ -1,0 +1,75 @@
+UNIT ROOT TESTS (ADF)
+============================================================
+FDI: Stationary
+GDP_Growth: Stationary
+Trade_Openness: Non-stationary
+
+HAUSMAN TEST
+============================================================
+Hausman Statistic: 0.3892
+p-value: 0.8232
+Preferred Model: RE
+
+FIXED EFFECTS MODEL
+============================================================
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:             GDP_Growth   R-squared:                        0.0464
+Estimator:                   PanelOLS   R-squared (Between):              0.5534
+No. Observations:                 225   R-squared (Within):               0.0464
+Date:                Wed, Dec 10 2025   R-squared (Overall):              0.4406
+Time:                        15:03:45   Log-likelihood                   -540.54
+Cov. Estimator:            Unadjusted                                           
+                                        F-statistic:                      5.2097
+Entities:                           9   P-value                           0.0062
+Avg Obs:                       25.000   Distribution:                   F(2,214)
+Min Obs:                       25.000                                           
+Max Obs:                       25.000   F-statistic (robust):             5.2097
+                                        P-value                           0.0062
+Time periods:                      25   Distribution:                   F(2,214)
+Avg Obs:                       9.0000                                           
+Min Obs:                       9.0000                                           
+Max Obs:                       9.0000                                           
+                                                                                
+                               Parameter Estimates                                
+==================================================================================
+                Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+----------------------------------------------------------------------------------
+FDI             1.213e-11  1.271e-11     0.9539     0.3412  -1.293e-11   3.719e-11
+Trade_Openness     0.0314     0.0098     3.2152     0.0015      0.0122      0.0507
+==================================================================================
+
+F-test for Poolability: 13.652
+P-value: 0.0000
+Distribution: F(8,214)
+
+Included effects: Entity
+
+RANDOM EFFECTS MODEL
+============================================================
+                        RandomEffects Estimation Summary                        
+================================================================================
+Dep. Variable:             GDP_Growth   R-squared:                        0.1050
+Estimator:              RandomEffects   R-squared (Between):              0.6155
+No. Observations:                 225   R-squared (Within):               0.0448
+Date:                Wed, Dec 10 2025   R-squared (Overall):              0.4886
+Time:                        15:03:45   Log-likelihood                   -545.95
+Cov. Estimator:            Unadjusted                                           
+                                        F-statistic:                      13.087
+Entities:                           9   P-value                           0.0000
+Avg Obs:                       25.000   Distribution:                   F(2,223)
+Min Obs:                       25.000                                           
+Max Obs:                       25.000   F-statistic (robust):             13.087
+                                        P-value                           0.0000
+Time periods:                      25   Distribution:                   F(2,223)
+Avg Obs:                       9.0000                                           
+Min Obs:                       9.0000                                           
+Max Obs:                       9.0000                                           
+                                                                                
+                               Parameter Estimates                                
+==================================================================================
+                Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+----------------------------------------------------------------------------------
+FDI             6.102e-12  1.141e-11     0.5345     0.5935  -1.639e-11    2.86e-11
+Trade_Openness     0.0262     0.0051     5.0995     0.0000      0.0161      0.0364
+==================================================================================

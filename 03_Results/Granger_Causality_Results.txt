@@ -1,0 +1,16 @@
+GRANGER CAUSALITY TEST (Viet Nam)
+============================================================
+
+1. Trade_Openness -> FDI
+------------------------------------------------------------
+   Lag   p-value Significant
+0    1  0.117806          No
+1    2  0.185276          No
+Conclusion: No significant causality
+
+2. GDP_Growth -> FDI
+------------------------------------------------------------
+   Lag   p-value Significant
+0    1  0.892790          No
+1    2  0.991165          No
+Conclusion: No significant causality
